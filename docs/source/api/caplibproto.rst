@@ -1,9 +1,6 @@
 caplibproto package
 ===================
 
-Submodules
-----------
-
 caplibproto.analytics module
 ----------------------------
 

@@ -1,9 +1,6 @@
 caplib package
 ==============
 
-Submodules
-----------
-
 caplib.analytics module
 -----------------------
 
