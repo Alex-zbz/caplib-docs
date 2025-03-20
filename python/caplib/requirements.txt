@@ -1,3 +1,0 @@
-##### Imports required by core library
-pandas>=2.0.3
-caplibproto==0.0.7
