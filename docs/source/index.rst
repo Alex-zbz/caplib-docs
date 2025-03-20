@@ -1,8 +1,5 @@
-QuantLib-Python Object Building Documentation
+CapLib-Python Object Building Documentation
 ===================================
-
-Contents
---------
 
 .. toctree::
    :maxdepth: 2
