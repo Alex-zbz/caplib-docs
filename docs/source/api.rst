@@ -1,7 +1,7 @@
-API
-===
+API Documentation
+===============
 
-.. autosummary::
-   :toctree: generated
-
-   lumache
+.. automodule:: caplib
+   :members:
+   :undoc-members:
+   :show-inheritance:
