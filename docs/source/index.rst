@@ -5,10 +5,7 @@ CapLib-Python Object Building Documentation
    :maxdepth: 2
    :caption: Contents:
 
-   api
-   examples
-
-   Indices and tables
+   api/modules
 ==================
 
 * :ref:`genindex`
