@@ -5,5 +5,5 @@ CapLib-Python Object Building Documentation
    :maxdepth: 2
    :caption: Contents:
 
-   api/modules
-==================
+   api/caplib
+   api/caplibproto

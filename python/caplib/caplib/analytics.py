@@ -63,7 +63,7 @@ def to_pricing_model_name(src):
 
 # PricingMethodName
 def to_pricing_method_name(src):
-    '''
+    """
     将字符串转换为 PricingMethodName 类型.
 
     Parameters
@@ -75,7 +75,7 @@ def to_pricing_method_name(src):
     -------
     PricingMethodName       
 
-    '''
+    """
     if src is None:
         return ANALYTICAL
     if src in ['', 'nan']:
