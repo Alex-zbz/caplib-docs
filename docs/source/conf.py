@@ -1,48 +1,53 @@
 # Configuration file for the Sphinx documentation builder.
+#
+# For the full list of built-in configuration values, see the documentation:
+# https://www.sphinx-doc.org/en/master/usage/configuration.html
 
-# -- Project information
-import os
-import sys
-sys.path.insert(0, os.path.abspath('../../python'))  # 将项目根目录添加到 Python 路径
+# -- Project information -----------------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'caplib-python-docs'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'CapLib'
+copyright = '2025, www.caprisktech.com'
+author = 'www.caprisktech.com'
 
-release = '0.1'
-version = '0.1.0'
+version = '0.1'
+release = '0.1.0'
 
-# -- General configuration
+# -- General configuration ---------------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    'sphinx.ext.duration',
-    'sphinx.ext.doctest',
     'sphinx.ext.autodoc',
-    'sphinx.ext.autosummary',
-    'sphinx.ext.intersphinx',
-    'sphinx.ext.napoleon',     # 解析 Google 和 NumPy 风格的 docstring
+    'sphinx.ext.napoleon',
 ]
-
-intersphinx_mapping = {
-    'python': ('https://docs.python.org/3/', None),
-    'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
-}
-intersphinx_disabled_domains = ['std']
+extensions.append('sphinx.ext.autodoc')
+extensions.append('sphinx.ext.napoleon')
 
 templates_path = ['_templates']
+exclude_patterns = []
 
-# -- Options for HTML output
+language = 'en'
+
+# -- Options for HTML output -------------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = 'sphinx_rtd_theme'
-
-# -- Options for EPUB output
-epub_show_urls = 'footnote'
-
-# 配置 autodoc
-autodoc_default_options = {
-    'members': True,
-    'member-order': 'bysource',
-    'special-members': '__init__',
-    'undoc-members': True,
-    'exclude-members': '__weakref__'
+html_theme_options = {
+    'navigation_depth': 2,
+    'collapse_navigation': True,
+    'titles_only': True
 }
+html_static_path = ['_static']
+html_show_sourcelink = False
+html_copy_source = False
+html_show_sphinx = False
+
+# Disable automatic API documentation generation
+autodoc_default_options = {
+    'no-auto-toc': True
+}
+
+# Add module path
+import os
+import sys
+sys.path.insert(0, os.path.abspath('../../..'))
